@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="title">
+            <input type="text" placeholder="小米MIX 2S">
+            <button class="noBtn">取消</button>
+        </div>
+        <ul class="list">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+        <p class="clickDel">清空搜索记录</p>
+    </div>
+    <script src="./src/js/lib/jquery-3.2.1.min.js"></script>
+    <script>
+        $('.clickDel').on('click', function() {
+            $('.list').children().empty();
+        });
+        $('.noBtn').on('click', function() {
+            location.href = 'index.html';
+        })
+    </script>
+</body>
+
+</html>

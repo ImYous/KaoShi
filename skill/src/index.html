@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=0">
+    <meta name="format-detection" content="telphone=no, email=no, address=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Document</title>
+    <script>
+        document.documentElement.style.fontSize = window.innerWidth / 750 * 100 + 'px';
+    </script>
+    <link rel="stylesheet" href="./css/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="header-input">
+            <div class="input">小米MIX 2S</div>
+            <div class="pic"><img src="./images/pic1.png" alt=""></div>
+        </header>
+        <section>
+            <div class="banner swiper-container">
+                <div class="list-Banner swiper-wrapper">
+                    <!-- Handlebars渲染轮播图 -->
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <script type='text/x-handlebars-template' id='banner-tpl'>
+                {{#each this}}
+                <div class="swiper-slide">
+                    <a href="#"> <img src="./images/{{banner}}" alt=""></a>
+                </div>
+                {{/each}}
+            </script>
+            <div class="dl-list">
+                <!-- <dt><img src="./images/pic2.png" alt=""></dt>
+                    <dd>活动频道</dd> -->
+            </div>
+            <script type="text/x-handlebars-template" id="dl-tpl">
+                {{#each this}}
+                <dl>
+                    <dt><img src="./images/{{list.dt}}" alt=""></dt>
+                    <dd>{{list.dd}}</dd>
+                </dl>
+                {{/each}}
+            </script>
+            <div class="title-bar">
+                <dl>
+                    <dt><img src="./images/pic3.png" alt=""></dt>
+                    <dd>
+                        <h3>小米之家北京五彩城店</h3>
+                        <p>距离3.79公里</p>
+                        <a href="#" class="right-H">其他零售店&gt</a>
+                    </dd>
+                </dl>
+            </div>
+        </section>
+    </div>
+    <script src="./js/lib/require.js"></script>
+    <script>
+        require(['./config.js'], function() {
+            require(['main']);
+        });
+    </script>
+</body>
+
+</html>

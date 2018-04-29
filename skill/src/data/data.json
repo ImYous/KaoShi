@@ -1,0 +1,29 @@
+[{
+        "banner": "1.png",
+        "list": {
+            "dd": "活动频道",
+            "dt": "pic2.png"
+        }
+    },
+    {
+        "banner": "banner.png",
+        "list": {
+            "dd": "小米闪购",
+            "dt": "pic4.png"
+        }
+    },
+    {
+        "banner": "1.png",
+        "list": {
+            "dd": "好友拼团",
+            "dt": "pic5.png"
+        }
+    },
+    {
+        "banner": "banner.png",
+        "list": {
+            "dd": "小米分期",
+            "dt": "pic6.png"
+        }
+    }
+]
