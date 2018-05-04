@@ -1,0 +1,200 @@
+@charset "UTF-8";
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-size: 0.32rem;
+    font-weight: 400;
+    font-style: normal;
+    font-family: "Microsoft Yahei";
+    text-size-adjust: 100%;
+}
+
+body {
+    min-width: 320px;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+html {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
+    font-size: 625%;
+}
+
+img,
+div,
+body,
+html,
+ul,
+li,
+a {
+    -webkit-touch-callout: none;
+}
+
+input,
+button {
+    outline: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #ccc;
+}
+
+html,
+body,
+.wrap {
+    width: 100%;
+    height: 100%;
+    background: #FFF;
+}
+.wrap {
+    display: flex;
+    flex-direction: column;
+    header {
+        width: 100%;
+        height: 0.8rem;
+        line-height: 0.8rem;
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid #eee;
+        .left,.right{
+            width: 0.56rem;
+            height: 0.48rem;
+            img {
+                width: 100%;
+                height: 100%; 
+                vertical-align: middle;
+            }
+        }
+    }
+    section {
+        width: 100%;
+        flex: 1;
+        overflow-y: scroll;
+        .content {
+            .Banner {
+                width: 100%;
+                height: auto;
+                img {
+                    width: 100%;
+                    height: 100%;  
+                }
+            }
+            .content-list {
+                width: 100%;
+                .list-dl {
+                    display: flex;
+                    background: #F9F9F9;
+                    dl {
+                        width: 33.3%;
+                        display: flex;
+                        padding: 4px 0;
+                        dt {
+                            width: 0.72rem;
+                            height: 0.7rem;
+                            margin-top: 4px;
+                            img {
+                                width: 100%;
+                                height: 100%;  
+                            }
+                        }
+                        dd {
+                            padding-left: 5px;
+                            p {
+                                font-size: 0.28rem;
+                            }
+                            
+                        }
+                    }
+                }
+                .data-itme {
+                    width: 100%;
+                    .data-itme-list {
+                        border-bottom: 1px solid #eee;
+                        padding: 8px 10px;
+                        h2 {
+                            width: 100%;
+                            height: 0.6rem;
+                            line-height: 0.6rem;
+                            font-size: 0.34rem;
+                            font-weight: 800;
+                        }
+                        .list {
+                            width: 100%;
+                            height: 0.4rem;
+                            line-height: 0.4rem;
+                            font-size: 0.28rem;
+                            color: #5A5A5A;
+                        }
+                        p {
+                            height: 0.4rem;
+                            line-height: 0.4rem;
+                            color: #B4272D;
+                            font-size: 0.3rem;
+
+                        }
+                    }
+                }
+                .fot-list {
+                    width: 100%;
+                    text-indent: 15px;
+                    h2 {
+                        width: 100%;
+                        padding: 8px 0;
+                        border-bottom: 1px solid #eee;
+                        font-size: 0.28rem;
+                        color: #646464;
+                    }
+                    p {
+                        font-size: 0.28rem;
+                        color: #8C8C8C;
+                        padding: 8px 0;
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        position: relative;
+        width: 100%;
+        height: 0.67rem;
+        display: flex;
+        border-top: 1px solid #eee;
+        .pic {
+            width: 2.02rem;
+            height: 0.67rem;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        span {
+            display: block;
+            line-height: 0.67rem;
+            padding-top: 2px;
+        }
+        .one-span {
+            padding-left: 0.9rem;
+            color: #B4272D;
+        }
+        .tow-span {
+            position: absolute;
+            right: 0;
+            top: 0;
+            background: #CCCCCC;
+            color: #fff;
+            padding: 0 0.4rem;
+        }
+    }
+}

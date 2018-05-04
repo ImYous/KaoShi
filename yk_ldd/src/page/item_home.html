@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=0">
+    <meta name="format-detection" content="telphone=no, email=no, address=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Document</title>
+    <script>
+        document.documentElement.style.fontSize = window.innerWidth / 750 * 100 + 'px';
+    </script>
+    <link rel="stylesheet" href="../css/iteme_home.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <div class="left">
+                <img src="../images/pic-left.png" alt="">
+            </div>
+            <div class="center">
+                <span class="ccc">商品</span>
+                <span>详情</span>
+            </div>
+            <div class="right">
+                <img src="../images/pic-right.png" alt="">
+            </div>
+        </header>
+        <section>
+            <div class="content">
+                <div class="Banner">
+                    <img src="../images/item-pic.png" alt="">
+                </div>
+                <div class="content-list">
+                    <div class="list-dl">
+                        <dl>
+                            <dt><img src="../images/item-pic2.png" alt=""></dt>
+                            <dd>
+                                <p>兰精天丝</p>
+                                <p>细腻柔软</p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt><img src="../images/item-pic3.png" alt=""></dt>
+                            <dd>
+                                <p>配兹利纹</p>
+                                <p>经典大气</p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt><img src="../images/item-pic4.png" alt=""></dt>
+                            <dd>
+                                <p>独立收纳</p>
+                                <p>精美实用</p>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="data-itme">
+                        <div class="data-itme-list">
+                            <h2>Paisley欧式天丝四件套</h2>
+                            <p class="list">柔滑惊天丝,清凉亲护保湿</p>
+                            <p>￥599</p>
+                        </div>
+                    </div>
+                    <div class="fot-list">
+                        <h2>积分:购买最高得59积分</h2>
+                        <p>服务:30天无忧退换货 48小时快速退款 慢88元免邮费</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="pic">
+                <img src="../images/fot-pic.png" alt="">
+            </div>
+            <span class="one-span">上架提醒</span>
+            <span class="tow-span">即将上架</span>
+        </footer>
+    </div>
+    <script src="../js/lib/jquery-1.10.1.min.js"></script>
+    <script>
+        $('.left').on('click', function() {
+            location.href = '../index.html';
+        });
+        $.ajax({
+            url: '../data/data.json',
+            success: function(data) {
+                console.log(data);
+                // $.each(data, function(i, ele) {
+                //     console.log('ok');
+                //     if (ele.code == i) {
+                //         console.log('ok');
+                //         // $.ajax({
+                //         //     url: '/item',
+                //         //     success: function(data) {
+                //         //         // template('#tlp-dl', data[], '.li-list');
+                //         //         location.href = '../../page/item_home.html';
+                //         //     }
+                //         // });
+                //     }
+                // });
+            }
+        });
+    </script>
+</body>
+
+</html>
